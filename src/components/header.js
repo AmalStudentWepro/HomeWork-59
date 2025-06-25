@@ -1,4 +1,13 @@
 import { getCookie } from "../utils/cookie";
+import { toggleTheme, getTheme } from "../utils/theme.js";
+
+setTimeout(() => {
+  const toggle = Headereader.querySelector(".theme-toggle");
+  if (toggle) toggle.onclick = toggleTheme;
+  getTheme();
+}, 0);
+
+
 
 
 export function Header() {
